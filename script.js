@@ -31,6 +31,7 @@ blockColor()
 
 function renderSaved(){
 
+    
     $('.description').each(function() {   //calling on each textarea to find a key that matches it's ID and then displays the value
     
     for (let i=0;i<localStorage.length;i++) {
@@ -56,7 +57,7 @@ function saveFunction(){
 }
 
 
-saveBtn.on("click", saveFunction) //I kept getting undefined when I added () to savefunction
+saveBtn.on("click", saveFunction) //I kept getting undefined. took me 20 minutes to take off the () when calling the function.
 
 
 // I was trying to use saveBtn with them all the same ID which didn't work so I
